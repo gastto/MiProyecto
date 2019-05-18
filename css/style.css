@@ -1,3 +1,7 @@
+*{
+    outline: dotted 1px red;
+}
+
 body{
     font-family: "Arial";
     font-size: 14px;
