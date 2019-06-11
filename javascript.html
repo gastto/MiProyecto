@@ -1,0 +1,42 @@
+<h1>Aprendiendo JavaScript</h1>
+
+<script>
+
+// 1) Introduccion
+//constructores
+    let nombre = prompt('Ingrese nombre:')
+    let stock = prompt('Ingrese stock:')
+    let precio = prompt('Ingrese precio:')
+    let disponible = confirm('Esta disponible?')
+
+
+// 2) Nudo
+    let precioFinal = precio * 1.21
+
+// comandos
+    //alert(nombre)
+    //console.log(precio)
+
+    //document.write('Hay ### unidades de ### que valen $### c/u')
+
+//tipos de datos
+
+//determinado:
+//hardcodeado, retocar valores ya creados
+
+//indeterminado: ()
+// let decimal = 12.3 * 11.3 (lo determina luego de una operación lógica)
+//traerlo de un servidor.
+
+//Determinado por el usuario:
+/*
+let nombre = prompt('Ingrese nombre:')
+let stock = prompt('Ingrese stock:')
+let precio = prompt('Ingrese precio:')
+let disponible = confirm('Esta disponible?')
+*/
+
+// 3) Desenlace
+document.write(`<p>Hay ${stock} unidades de <strong>${nombre}</strong> que valen $ ${precioFinal} c/u </p>`)
+
+</script>
