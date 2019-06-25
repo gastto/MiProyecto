@@ -1,0 +1,12 @@
+JSON 
+notación literal de objetos de javascript
+
+Objetos {}
+
+
+AJAX
+
+
+GET Se piden datos, genera cache (Peticiones) busquedas incluido
+
+POST envia datos nuevos, no deja residuo cache (envio datos nuevos)
