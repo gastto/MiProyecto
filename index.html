@@ -171,7 +171,11 @@
                 // se transforma en el navegador
                 let ajax = new XMLHttpRequest()
                 ajax.open("GET","noticias.json")
-                ajax.onload =  // asincronico, evento interaccion indirecta. mientras se carga el evento
+                ajax.onload = function(){ // Funciones Anonimas
+                    if( ajax.status == 200 ){ //<-- Respuesta Exitosa
+                        console.log( ajax.response )
+                    }
+                }// asincronico, evento interaccion indirecta. mientras se carga el evento, el evento activa una funcion
                 ajax.send() // equivale a enter
 
                 // sintaxis de objeto vs sintaxis de array
@@ -193,7 +197,7 @@
                 }
 
 
-                function validarLink(){
+                function validarLink(){ // Funcion Nominada
                     confirm("Esta seguro que desea irse?")
                 }
 
