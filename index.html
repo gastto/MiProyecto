@@ -173,7 +173,11 @@
                 ajax.open("GET","noticias.json")
                 ajax.onload = function(){ // Funciones Anonimas
                     if( ajax.status == 200 ){ //<-- Respuesta Exitosa
+                        console.log("Antes del parseo:")// parseo: convertir de un formato a otro, texto(string) a objeto
                         console.log( ajax.response )
+
+                        console.log("Despues del parseo:")
+                        console.log( JSON.parse(ajax.response) )
                     }
                 }// asincronico, evento interaccion indirecta. mientras se carga el evento, el evento activa una funcion
                 ajax.send() // equivale a enter
