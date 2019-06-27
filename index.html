@@ -165,6 +165,9 @@
         //links[5].onclick = validarLink
         //links[6].onclick = validarLink
 
+            //Transformar datos a objetos
+        // 4 pasos - conectarse al recurso, obtener el recurso, procesar el recuros, darle un destino(mostrarlo)
+
                 // Manipulación MAsiva del DOM
                 let links = document.querySelectorAll(".nav-link")
 
@@ -173,11 +176,20 @@
                 ajax.open("GET","noticias.json")
                 ajax.onload = function(){ // Funciones Anonimas
                     if( ajax.status == 200 ){ //<-- Respuesta Exitosa
-                        console.log("Antes del parseo:")// parseo: convertir de un formato a otro, texto(string) a objeto
-                        console.log( ajax.response )
+                        //console.log("Antes del parseo:") // parseo: convertir de un formato a otro, texto(string) a objeto
+                        //console.log( ajax.response )
 
-                        console.log("Despues del parseo:")
-                        console.log( JSON.parse(ajax.response) )
+                        //console.log("Despues del parseo:")
+                        //console.log( JSON.parse(ajax.response) )
+
+                        let noticias = JSON.parse(ajax.response)
+
+                        noticias.forEach(function(noticia){ // callback
+                            console.log("Aca va una noticia:")
+                            console.log( noticia )
+                        })
+
+
                     }
                 }// asincronico, evento interaccion indirecta. mientras se carga el evento, el evento activa una funcion
                 ajax.send() // equivale a enter
