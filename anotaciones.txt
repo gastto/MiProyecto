@@ -10,3 +10,12 @@ AJAX
 GET Se piden datos, genera cache (Peticiones) busquedas incluido
 
 POST envia datos nuevos, no deja residuo cache (envio datos nuevos)
+
+NODE:
+es modular, tiene muchas herramientas 
+npm package.
+
+Arrancar:
+node init
+
+
