@@ -173,7 +173,7 @@
 
                 // se transforma en el navegador
                 let ajax = new XMLHttpRequest()
-                ajax.open("GET","noticias.json")
+                ajax.open("GET","https://api.sheety.co/a7cc264b-b84c-43bd-9e54-052e6fca336e")
                 ajax.onload = function(){ // Funciones Anonimas
                     if( ajax.status == 200 ){ //<-- Respuesta Exitosa
                         //console.log("Antes del parseo:") // parseo: convertir de un formato a otro, texto(string) a objeto
@@ -226,7 +226,7 @@
 
                     let contenido = `<article class="row">
                                         <div class="col-12 col-md-3 col-lg-4">
-                                            <img src="img/${imagen}" class="img-fluid" alt="">
+                                            <img src="${imagen}" class="img-fluid" alt="">
                                         </div>
                                         <div class="col-12 col-md-9 col-lg-8">
                                             <h3>${titulo}</h3>
